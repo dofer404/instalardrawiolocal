@@ -1,0 +1,4 @@
+# Some ugly workaround code to create a Ubuntu ".desktop" file with the correct path to icon.svg
+cat draw.io-local_pre.desktop >draw.io-local.desktop
+echo "Icon=$(readlink -f drawiolocal.svg)" >>draw.io-local.desktop
+cat draw.io-local_post.desktop >>draw.io-local.desktop

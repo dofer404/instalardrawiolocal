@@ -1,0 +1,12 @@
+echo "Instalación de draw.io en maquina local"
+echo " - Se intentará instalar Docker (necesario) con: curl -fsSL https://get.docker.com/ | sh"
+echo ""
+echo "Iniciando..."
+echo ""
+set -x
+curl -fsSL https://get.docker.com/ | sh
+set +x
+echo ""
+echo "Se intentará obtener la imagen Docker de Draw.io"
+echo ""
+./instalar_drawio_dockerimage

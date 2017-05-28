@@ -1,0 +1,15 @@
+echo ""
+echo "Se detendrá el srevicio local de draw.io"
+echo "Se borrarán las imagenes Docker de draw.io"
+echo "Se quitarán los accesos directos creados"
+echo ""
+set -x
+sudo docker stop draw
+sudo docker rmi ivonet/draw.io
+sudo rm /usr/local/bin/iniciarServicioDrawIo
+sudo rm /usr/local/bin/draw.io
+rm ~/.local/share/applications/draw.io-local.desktop
+rm ~/.local/share/applications/draw.io-local-servicio.desktop
+set +x
+echo ""
+echo "Listo"

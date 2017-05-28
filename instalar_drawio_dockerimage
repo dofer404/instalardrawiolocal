@@ -1,0 +1,22 @@
+./crear_archivo_desktop
+echo "Instalación de draw.io en maquina local (se asume que docker ya está instalado)"
+echo " - Se intentará obtener la imagen Docker para draw.io con: docker pull ivonet/draw.io"
+echo " - Se iniciará draw.io en puerto local 24074 con: docker run -d --rm --name draw -p 24074:80 -p 4443:443 ivonet/draw.io"
+echo " - Se copiará draw.io-local.desktop a /usr/share/applications/"
+echo ""
+echo "Iniciando..."
+echo ""
+set -x
+sudo docker pull ivonet/draw.io
+# Copiamos los comandos a bin local
+sudo cp iniciarServicioDrawIo /usr/local/bin/
+sudo cp draw.io /usr/local/bin/
+# Creamos accesos directos para Ubuntu
+cp draw.io-local.desktop ~/.local/share/applications/draw.io-local.desktop
+cp draw.io-local-servicio.desktop ~/.local/share/applications/
+# Iniciamos el srevicio y abrimos Draw.io en una ventana de Firefox
+iniciarServicioDrawIo
+set +x
+echo ""
+echo "Finalizado, se inicia Firefox con Draw.io"
+echo ""

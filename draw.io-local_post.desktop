@@ -1,0 +1,15 @@
+Categories=GNOME;GTK;Network;WebBrowser;Programming;
+Actions=NewWindow;StartService;
+
+[Desktop Action NewWindow]
+Name=Open a New Window
+Name[es]=Abrir una ventana nueva
+Exec=draw.io
+OnlyShowIn=Unity;
+
+[Desktop Action StartService]
+Name=Start the local Draw.io service
+Name[es]=Iniciar el servicio de Draw.io local
+Terminal=true
+Exec=iniciarServicioDrawIo
+OnlyShowIn=Unity;

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=0.0
+Name=(Service) Local Draw.io
+Name[es]=Servicio Draw.io local
+GenericName=Web Application
+GenericName[es]=Aplicación Web
+Keywords=UML;Diagram;Diagramming Tool;
+Keywords[es]=UML;Diagram;Diagramming Tool;Herramienta de Diagramación, Diagramas;
+Exec=iniciarServicioDrawIo
+Terminal=true
+X-MultipleArgs=false
+Type=Application
+Icon=drawiodockerservice
+Categories=GNOME;GTK;Network;WebBrowser;Programming;
+StartupNotify=true

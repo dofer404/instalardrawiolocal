@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.0
+Name=Local Draw.io
+Name[es]=Draw.io local
+GenericName=Web Application
+GenericName[es]=Aplicación Web
+Keywords=UML;Diagram;Diagramming Tool;
+Keywords[es]=UML;Diagram;Diagramming Tool;Herramienta de Diagramación, Diagramas;
+Exec=draw.io
+Terminal=false
+X-MultipleArgs=false
+Type=Application
